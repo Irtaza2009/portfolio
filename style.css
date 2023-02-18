@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    height: auto;
+    height: 200vh;
 }
 body {
     height: auto;
@@ -15,8 +15,8 @@ body {
     display: flex;
     gap: 4vmin;
     position: absolute;
-    left: 50%;
-    top: 150%;
+    left: 40%;
+    top: 160%;
     transform: translate(0%, -50%); 
     user-select: none; /* -- Prevent image highlighting -- */
   }
@@ -52,17 +52,15 @@ body {
   }
 
   .works {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
     font-family: "Rubik", sans-serif;
     font-size: 8vw;
     margin: 0px 10vw;
     width: 80vw;
     color: white;
+    position: absolute;
+    left: 27%;
+    top: 108%;
+
   }
   
   .side {
