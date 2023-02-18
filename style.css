@@ -1,9 +1,14 @@
+html {
+    scroll-behavior: smooth;
+    height: auto;
+}
 body {
-    height: 100vh;
+    height: auto;
     width: 100vw;
     background-color: black;
     margin: 0rem;
-    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
 }
   
 #image-track {
@@ -11,7 +16,7 @@ body {
     gap: 4vmin;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 150%;
     transform: translate(0%, -50%); 
     user-select: none; /* -- Prevent image highlighting -- */
   }
@@ -45,6 +50,20 @@ body {
     background-color: var(--dark);
     margin: 0px;
   }
+
+  .works {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    font-family: "Rubik", sans-serif;
+    font-size: 8vw;
+    margin: 0px 10vw;
+    width: 80vw;
+    color: white;
+  }
   
   .side {
     display: grid;
@@ -70,7 +89,8 @@ body {
   
   #left-side {
     background-color: var(--left-color);
-    width: 60%;
+    width: 50%;
+    background-position: center top;
     z-index: 2;
   }
   
@@ -84,6 +104,7 @@ body {
   
   #right-side {
     background-color: var(--right-color);
+    background-position: center top;
   }
   
   #right-side .title {
@@ -91,7 +112,7 @@ body {
   }
   
   #right-side .fancy {
-    color: white;
+    color: rgb(15, 209, 209);
   }
   
   
