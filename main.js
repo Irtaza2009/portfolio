@@ -52,5 +52,8 @@ const handleOnMove = e => {
   }
 }
 
+function topFunction() {
+  document.getElementById("works-id").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+}
 /* -- Had to add extra lines for touch events -- */
 

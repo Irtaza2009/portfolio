@@ -11,6 +11,8 @@ body {
     overflow-x: hidden;
 }
   
+/* Works */
+
 #image-track {
     display: flex;
     gap: 4vmin;
@@ -30,10 +32,7 @@ body {
     
   }
 
-
-  
-
-
+/* Header */
   :root {
     --dark: rgb(20, 20, 20);
     --yellow: rgb(253, 216, 53);
@@ -113,4 +112,23 @@ body {
     color: rgb(15, 209, 209);
   }
   
-  
+/* Buttons */
+
+#worksButton {
+  display: block; /* Hidden by default */
+  position: absolute; /* Fixed/sticky position */
+  left: 47.3%;
+  top: 70%;
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(255, 255, 255); /* Set a background color */
+  color: rgb(0, 0, 0); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+#worksButton:hover {
+  background-color: #a09b9b; /* Add a dark-grey background on hover */
+}
