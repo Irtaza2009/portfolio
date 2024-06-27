@@ -97,16 +97,22 @@ h2 {
 
 #portfolio {
   overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-#portfolio img {
-  display: inline-block;
+#portfolio.visible {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .content-box {
   background-color: #3c3f47;
   color: white;
-  padding: 40px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 80%;
@@ -125,6 +131,9 @@ h2 {
 .about-box {
   max-width: 600px;
   text-align: left;
+  background-color: #3c3f47;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 @keyframes fadeInUp {

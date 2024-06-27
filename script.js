@@ -44,14 +44,12 @@ const handleOnMove = (e) => {
   }
 };
 
-function autoScroll() {
-  const track = document.getElementById("image-track");
-  track.scrollLeft += 2;
-  if (track.scrollLeft + track.clientWidth < track.scrollWidth) {
-    requestAnimationFrame(autoScroll);
-  }
-}
+window.addEventListener("scroll", () => {
+  const portfolioSection = document.getElementById("portfolio");
+  const portfolioPosition = portfolioSection.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.3;
 
-window.onload = () => {
-  setTimeout(autoScroll, 1000); // Delay to start auto-sc
-};
+  if (portfolioPosition < screenPosition) {
+    portfolioSection.classList.add("visible");
+  }
+});
