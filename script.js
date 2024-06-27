@@ -53,5 +53,5 @@ function autoScroll() {
 }
 
 window.onload = () => {
-  setTimeout(autoScroll, 1000); // Delay to start auto-scrolling
+  setTimeout(autoScroll, 1000); // Delay to start auto-sc
 };

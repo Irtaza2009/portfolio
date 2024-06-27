@@ -42,7 +42,7 @@ header h1 {
   transition: color 0.3s;
 }
 
-.social-links a:hover {
+social-links a:hover {
   color: #61dafb;
 }
 
@@ -60,6 +60,7 @@ h2 {
   gap: 20px;
   padding: 40px 20px;
   overflow-x: hidden;
+  animation: fadeInUp 1s ease-in-out;
 }
 
 .image-container {
@@ -100,4 +101,39 @@ h2 {
 
 #portfolio img {
   display: inline-block;
+}
+
+.content-box {
+  background-color: #3c3f47;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  margin: 20px auto 40px auto;
+  text-align: left;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+#about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.about-box {
+  max-width: 600px;
+  text-align: left;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
