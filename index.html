@@ -1,84 +1,88 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Irtaza's Personal Webpage</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="profile.jpg" alt="Irtaza" class="profile-pic" />
+      <h1>Irtaza</h1>
+      <p class="description">I am a simple person with a love for technology</p>
+      <div class="social-links">
+        <a href="https://instagram.com/irtaza_2009" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/syed-muhammad-irtaza-naqvi-5b627422a/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/Irtaza2009" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://medium.com/@irtazanaq05" target="_blank"
+          ><i class="fab fa-medium"></i
+        ></a>
+        <a href="https://irtaza.itch.io" target="_blank"
+          ><i class="fab fa-itch-io"></i
+        ></a>
+        <a href="mailto:irtazanaqvi05@gmail.com"
+          ><i class="far fa-envelope"></i
+        ></a>
+      </div>
+    </header>
 
-  <title>Muhammad Irtaza</title>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <div class="image-container">
+          <img class="image" src="profile.jpg" draggable="false" />
+          <div class="overlay">
+            <div class="text">Project 1 Description</div>
+          </div>
+        </div>
+        <div class="image-container">
+          <img
+            class="image"
+            src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+            draggable="false"
+          />
+          <div class="overlay">
+            <div class="text">Project 2 Description</div>
+          </div>
+        </div>
+        <div class="image-container">
+          <img
+            class="image"
+            src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+            draggable="false"
+          />
+          <div class="overlay">
+            <div class="text">Project 3 Description</div>
+          </div>
+        </div>
 
-  <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
-  <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
-  <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet"/>
+        <!-- Add more image-container divs as needed -->
+      </div>
+    </section>
 
-  <div id="left-side" class="side">
-    <h2 class="title">
-      I am a 
-      <span class="fancy">Video Editor</span>      
-    </h2>
-  </div>
-
-  <div id="right-side" class="side">
-    <h2 class="title">
-      I am a  
-      <span class="fancy">Game Developer</span>     
-    </h2>
-  </div>
-
-  <!-- Social Media Links -->
-
-<div class="link">
-  <a data-title="instagram.com/irtaza_2009" href="https://instagram.com/irtaza_2009" target="_blank">
-    <i class="fa-brands fa-instagram"></i>
-  </a>
-
-  <a data-title="linkedin.com/in/syed-muhammad-irtaza-naqvi-5b627422a/" href="https://www.linkedin.com/in/syed-muhammad-irtaza-naqvi-5b627422a/" target="_blank">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
-
-  <a data-title="github.com/Irtaza2009" href="https://github.com/Irtaza2009" target="_blank">
-    <i class="fa-brands fa-github"></i>
-  </a>
-
-  <a data-title="medium.com/@irtazanaq05" href="https://medium.com/@irtazanaq05" target="_blank">
-    <i class="fa-brands fa-medium"></i>
-  </a>
-
-  <a data-title="irtaza.itch.io" href="https://irtaza.itch.io" target="_blank">
-    <i class="fa-brands fa-itch-io"></i>
-  </a>
-
-  <a data-title="irtazanaqvi05@gmail.com" href="mailto:irtazanaqvi05@gmail.com">
-    <i class="fa-regular fa-envelope"></i>
-  </a>
-</div>
-
-  <!-- Works Button -->
-
-  <button onclick="topFunction()" id="worksButton" title="Works">
-    <i class="fa-solid fa-chevron-down fa-2x"></i>
-  </button>
-
-</head>
-
-<body>
-
-  
-
-  <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-    
-    <img id="works-id" class="image" src="profile.jpg" draggable="false" />
-    <img class="image" src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
-    <img class="image" src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" draggable="false" />
-    <img class="image" src="https://images.unsplash.com/photo-1495805442109-bf1cf975750b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
-    <img class="image" src="https://images.unsplash.com/photo-1548021682-1720ed403a5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
-    <img class="image" src="https://images.unsplash.com/photo-1613346945084-35cccc812dd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1759&q=80" draggable="false" />
-    <img class="image" src="https://images.unsplash.com/photo-1516681100942-77d8e7f9dd97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
-  </div>
-  <h2 class="works">Works</h2>
-  
-  <script src="main.js"></script>
-  
-</body>
-
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>
+        Hello! My name is Irtaza. I am a Content Writer, Video Editor, and
+        Hobbyist Game Developer. I live in Islamabad, Pakistan, and I am a huge
+        fan of Pokemon. I love reading books and playing table tennis. I also
+        enjoy discussing computers and technology. Welcome to my personal
+        webpage!
+      </p>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
-  
-
