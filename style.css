@@ -1,3 +1,6 @@
+* {
+  cursor: none;
+}
 body {
   font-family: "Courier New", Courier, monospace;
   margin: 0;
@@ -203,12 +206,12 @@ h2 {
 .menu ul li a {
   color: white;
   text-decoration: none;
-  font-size: 0.9em; /* Adjusted font size using viewport units */
+  font-size: 1em; /* Adjusted font size using viewport units */
   transition: color 0.3s;
 }
 
-.menu ul li a:hover {
-  color: #61dafb;
+.menu ul :hover {
+  background-color: #22242b;
 }
 
 .timeline {
@@ -283,4 +286,37 @@ h2 {
 .scroll-indicator a:hover,
 .scroll-indicator a.active {
   background-color: white;
+}
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid black;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  z-index: 2000;
+}
+
+.cursor2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+  z-index: 2000;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
 }
