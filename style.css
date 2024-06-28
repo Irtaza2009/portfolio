@@ -135,7 +135,7 @@ h2 {
 }
 
 .content-box {
-  background-color: #3c3f47;
+  background-color: #282c34;
   color: white;
   padding: 2vw;
   border-radius: 1vw; /* Adjusted border radius using viewport units */
@@ -155,7 +155,6 @@ h2 {
 
 .about-box {
   max-width: 60vw; /* Adjusted max-width using viewport units */
-  background-color: #3c3f47;
   padding: 2vw;
   border-radius: 1vw; /* Adjusted border radius using viewport units */
   text-align: left;
