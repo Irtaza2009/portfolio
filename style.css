@@ -195,7 +195,7 @@ h2 {
 
 .menu ul li {
   display: inline-block; /* Changed display to block for vertical menu */
-  margin-right: 1.3vh;
+  margin-right: 0.5vh;
   margin-bottom: 1.3vh; /* Adjusted margin using viewport units */
   background-color: #3c3f47;
   padding: 1.3vh;
@@ -205,7 +205,7 @@ h2 {
 .menu ul li a {
   color: white;
   text-decoration: none;
-  font-size: 1em; /* Adjusted font size using viewport units */
+  font-size: 1.8vh; /* Adjusted font size using viewport units */
   transition: color 0.3s;
 }
 
