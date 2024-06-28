@@ -16,13 +16,17 @@
     <script>
       particlesJS("particles-js", {
         particles: {
+          color: { value: "#ffffff" },
           number: { value: 100 },
           size: { value: 3 },
-          move: { speed: 1 },
+          move: { speed: 1 }, // Reduced speed
         },
         interactivity: {
           events: {
             onhover: { enable: true, mode: "repulse" },
+          },
+          modes: {
+            repulse: { distance: 50 }, // Reduced influence radius
           },
         },
       });
@@ -65,6 +69,13 @@
       </header>
     </div>
 
+    <div class="scroll-indicator">
+      <a href="#header-wrapper"></a>
+      <a href="#about-me"></a>
+      <a href="#portfolio"></a>
+      <a href="#articles"></a>
+    </div>
+
     <section id="about-me" class="content-box">
       <div class="about-box">
         <h2>About Me</h2>
@@ -91,12 +102,7 @@
 
     <section id="portfolio" class="content-box">
       <h2>Portfolio</h2>
-      <div
-        id="image-track"
-        class="carousel"
-        data-mouse-down-at="0"
-        data-prev-percentage="0"
-      >
+      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
         <a
           href="https://example.com/project1"
           target="_blank"
@@ -141,12 +147,7 @@
 
     <section id="articles" class="content-box">
       <h2>Published Articles</h2>
-      <div
-        id="article-track"
-        class="carousel"
-        data-mouse-down-at="0"
-        data-prev-percentage="0"
-      >
+      <div id="article-track" data-mouse-down-at="0" data-prev-percentage="0">
         <a
           href="https://testerwork.com/reproducibility-testing/"
           target="_blank"
@@ -206,19 +207,6 @@
           </div>
         </a>
         <!-- Add more article-container divs as needed -->
-      </div>
-    </section>
-
-    <section id="timeline" class="content-box">
-      <h2>Timeline</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <h3>2023</h3>
-            <p>Started learning web development</p>
-          </div>
-        </div>
-        <!-- Add more timeline items as needed -->
       </div>
     </section>
 
