@@ -210,3 +210,45 @@ h2 {
 .menu ul li a:hover {
   color: #61dafb;
 }
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 90%;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #61dafb;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-content {
+  background: #3c3f47;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  width: 45%;
+}
+
+.timeline-content h3 {
+  margin: 0;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  left: 55%;
+}

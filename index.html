@@ -11,19 +11,30 @@
     />
   </head>
   <body>
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 100 },
+          size: { value: 3 },
+          move: { speed: 1 },
+        },
+        interactivity: {
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+          },
+        },
+      });
+    </script>
+
     <div id="header-wrapper">
       <header>
         <nav class="menu">
           <ul>
-            <li>
-              <a href="#about-me">About</a>
-            </li>
-            <li>
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a href="#articles">Published Articles</a>
-            </li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#articles">Published Articles</a></li>
           </ul>
         </nav>
         <img src="assets/profile.jpg" alt="Irtaza" class="profile-pic" />
@@ -80,7 +91,12 @@
 
     <section id="portfolio" class="content-box">
       <h2>Portfolio</h2>
-      <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+      <div
+        id="image-track"
+        class="carousel"
+        data-mouse-down-at="0"
+        data-prev-percentage="0"
+      >
         <a
           href="https://example.com/project1"
           target="_blank"
@@ -125,7 +141,12 @@
 
     <section id="articles" class="content-box">
       <h2>Published Articles</h2>
-      <div id="article-track" data-mouse-down-at="0" data-prev-percentage="0">
+      <div
+        id="article-track"
+        class="carousel"
+        data-mouse-down-at="0"
+        data-prev-percentage="0"
+      >
         <a
           href="https://testerwork.com/reproducibility-testing/"
           target="_blank"
@@ -185,6 +206,19 @@
           </div>
         </a>
         <!-- Add more article-container divs as needed -->
+      </div>
+    </section>
+
+    <section id="timeline" class="content-box">
+      <h2>Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>2023</h3>
+            <p>Started learning web development</p>
+          </div>
+        </div>
+        <!-- Add more timeline items as needed -->
       </div>
     </section>
 
