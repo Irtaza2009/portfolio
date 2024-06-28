@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   padding: 60px 20px;
 }
