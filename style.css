@@ -13,7 +13,7 @@ html {
 }
 
 header {
-  padding: 80px 20px;
+  padding: 8vh 5vw; /* Adjusted padding using viewport units */
 }
 
 #header-wrapper {
@@ -26,32 +26,32 @@ header {
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 12vw; /* Adjusted width using viewport units */
+  height: 12vw; /* Adjusted height using viewport units */
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 2vh; /* Adjusted margin using viewport units */
 }
 
 header h1 {
   margin: 0;
-  font-size: 4em;
+  font-size: 4.5vw; /* Adjusted font size using viewport units */
 }
 
 .description {
-  font-size: 1.5em;
-  margin: 10px 0 20px 0;
+  font-size: 1.7vw; /* Adjusted font size using viewport units */
+  margin: 1vh 0 2vh 0; /* Adjusted margin using viewport units */
   color: #aaa;
 }
 
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 1vw; /* Adjusted gap using viewport units */
 }
 
 .social-links a {
   color: white;
-  font-size: 2em;
+  font-size: 2vw; /* Adjusted font size using viewport units */
   transition: color 0.3s;
 }
 
@@ -60,19 +60,19 @@ header h1 {
 }
 
 section {
-  padding: 40px 20px;
+  padding: 4vh 5vw; /* Adjusted padding using viewport units */
 }
 
 h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
+  font-size: 2.5vw; /* Adjusted font size using viewport units */
+  margin-bottom: 2vh; /* Adjusted margin using viewport units */
 }
 
 #image-track,
 #article-track {
   display: flex;
-  gap: 20px;
-  padding: 40px 20px;
+  gap: 2vw; /* Adjusted gap using viewport units */
+  padding: 4vh 5vw; /* Adjusted padding using viewport units */
   overflow-x: hidden;
   animation: fadeInUp 1s ease-in-out;
 }
@@ -80,8 +80,8 @@ h2 {
 .image-container,
 .article-container {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 30vw; /* Adjusted width using viewport units */
+  height: 20vh; /* Adjusted height using viewport units */
 }
 
 .image,
@@ -118,7 +118,7 @@ h2 {
   overflow: hidden;
   visibility: hidden;
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(5vh);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   text-align: center;
   height: 50vh;
@@ -134,11 +134,11 @@ h2 {
 .content-box {
   background-color: #3c3f47;
   color: white;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 2vw;
+  border-radius: 1vw; /* Adjusted border radius using viewport units */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 70%;
-  margin: 20px auto 40px auto;
+  max-width: 70vw; /* Adjusted max-width using viewport units */
+  margin: 2vh auto 4vh auto; /* Adjusted margin using viewport units */
   text-align: left;
   animation: fadeInUp 1s ease-in-out;
 }
@@ -151,12 +151,12 @@ h2 {
 }
 
 .about-box {
-  max-width: 600px;
+  max-width: 60vw; /* Adjusted max-width using viewport units */
   background-color: #3c3f47;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 2vw;
+  border-radius: 1vw; /* Adjusted border radius using viewport units */
   text-align: left;
-  font-size: 1.2em;
+  font-size: 1.2vw; /* Adjusted font size using viewport units */
 }
 
 .about-box ul {
@@ -165,13 +165,13 @@ h2 {
 }
 
 .about-box ul li {
-  margin: 5px 0;
+  margin: 1vh 0; /* Adjusted margin using viewport units */
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(5vh);
   }
   to {
     opacity: 1;
@@ -181,8 +181,8 @@ h2 {
 
 .menu {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 1.5vh; /* Adjusted top position using viewport units */
+  right: 0.5vw; /* Adjusted left position using viewport units */
   z-index: 1000;
 }
 
@@ -192,18 +192,18 @@ h2 {
 }
 
 .menu ul li {
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  display: inline-block; /* Changed display to block for vertical menu */
+  margin-right: 1.3vh;
+  margin-bottom: 1.3vh; /* Adjusted margin using viewport units */
   background-color: #3c3f47;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 1.3vh;
+  border-radius: 0.5vw; /* Adjusted border radius using viewport units */
 }
 
 .menu ul li a {
   color: white;
   text-decoration: none;
-  font-size: 0.9em;
+  font-size: 0.9em; /* Adjusted font size using viewport units */
   transition: color 0.3s;
 }
 
