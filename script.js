@@ -174,3 +174,12 @@ a.forEach((item) => {
     cursor.classList.remove("hover");
   });
 });
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowDown") {
+    const nextSection = document.querySelector(".content-box:not(.hidden)");
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+});
