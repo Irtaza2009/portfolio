@@ -118,7 +118,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 document.addEventListener("DOMContentLoaded", () => {
   AOS.init({
-    duration: 1200, // Animation duration in milliseconds
+    duration: 1000, // Animation duration in milliseconds
     mirror: true, // whether elements should animate out while scrolling past them
   });
   const sections = document.querySelectorAll("section");
