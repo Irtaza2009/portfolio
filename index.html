@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   </head>
   <body>
     <div id="particles-js"></div>
@@ -19,14 +20,14 @@
           color: { value: "#ffffff" },
           number: { value: 100 },
           size: { value: 3 },
-          move: { speed: 1 }, // Reduced speed
+          move: { speed: 1 },
         },
         interactivity: {
           events: {
             onhover: { enable: true, mode: "repulse" },
           },
           modes: {
-            repulse: { distance: 50 }, // Reduced influence radius
+            repulse: { distance: 50 },
           },
         },
       });
@@ -76,7 +77,7 @@
       <a href="#articles"></a>
     </div>
 
-    <section id="about-me" class="content-box">
+    <section id="about-me" class="content-box" data-aos="zoom-in">
       <div class="about-box">
         <h2>About Me</h2>
         <p>
@@ -100,10 +101,10 @@
       </div>
     </section>
 
-    <section id="portfolio">
+    <section id="portfolio" data-aos="zoom-in">
       <h2>Portfolio</h2>
       <div class="cards">
-        <div class="card">
+        <div class="card" data-card data-aos="fade-right">
           <a
             href="https://example.com/project1"
             target="_blank"
@@ -115,7 +116,7 @@
             </div>
           </a>
         </div>
-        <div class="card">
+        <div class="card" data-card data-aos="fade-up">
           <a
             href="https://example.com/project2"
             target="_blank"
@@ -131,7 +132,7 @@
             </div>
           </a>
         </div>
-        <div class="card">
+        <div class="card" data-card data-aos="fade-left">
           <a
             href="https://example.com/project3"
             target="_blank"
@@ -151,10 +152,10 @@
       </div>
     </section>
 
-    <section id="articles">
+    <section id="articles" data-aos="zoom-in">
       <h2>Published Articles</h2>
       <div class="cards">
-        <div class="card">
+        <div class="card" data-card data-aos="fade-right">
           <a
             href="https://testerwork.com/reproducibility-testing/"
             target="_blank"
@@ -170,7 +171,7 @@
             </div>
           </a>
         </div>
-        <div class="card">
+        <div class="card" data-card data-aos="fade-up">
           <a
             href="https://testerwork.com/smoke-testing-a-complete-guide/"
             target="_blank"
@@ -186,7 +187,7 @@
             </div>
           </a>
         </div>
-        <div class="card">
+        <div class="card" data-card data-aos="fade-down">
           <a
             href="https://testerwork.com/the-importance-of-functional-testing/"
             target="_blank"
@@ -204,7 +205,7 @@
             </div>
           </a>
         </div>
-        <div class="card">
+        <div class="card" data-card data-aos="fade-left">
           <a
             href="https://testerwork.com/essential-traits-and-skills-of-a-successful-software-tester/"
             target="_blank"
@@ -226,6 +227,8 @@
 
     <div class="cursor"></div>
     <div class="cursor2"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="script.js"></script>
   </body>
