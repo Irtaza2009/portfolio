@@ -7,8 +7,8 @@ body {
   font-family: "Roboto Mono", monospace;
   margin: 0;
   padding: 0;
-  background-color: #282c34;
-  color: white;
+  background-color: var(--bg-color); /* Updated with CSS variable */
+  color: var(--text-color); /* Updated with CSS variable */
   text-align: center;
   overflow-x: hidden;
 }
@@ -45,7 +45,7 @@ header h1 {
 .description {
   font-size: 1.7vw;
   margin: 1vh 0 2vh 0;
-  color: #aaa;
+  color: #aaa; /* Hardcoded color, update if needed */
 }
 
 .social-links {
@@ -55,13 +55,13 @@ header h1 {
 }
 
 .social-links a {
-  color: white;
+  color: var(--text-color); /* Updated with CSS variable */
   font-size: 2vw;
   transition: color 0.3s;
 }
 
 .social-links a:hover {
-  color: #61dafb;
+  color: var(--link-color); /* Updated with CSS variable */
 }
 
 section {
@@ -74,8 +74,8 @@ h2 {
 }
 
 #about-me {
-  background-color: #282c34;
-  color: white;
+  background-color: var(--bg-color); /* Updated with CSS variable */
+  color: var(--text-color); /* Updated with CSS variable */
   padding: 2vw;
   border-radius: 1vw; /* Adjusted border radius using viewport units */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -94,7 +94,7 @@ h2 {
 }
 
 .card {
-  background-color: #3c3f47;
+  background-color: var(--card-bg-color); /* Updated with CSS variable */
   border-radius: 1vw;
   padding: 1vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -127,8 +127,8 @@ h2 {
 .overlay {
   position: absolute;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
+  background: var(--overlay-bg-color); /* Updated with CSS variable */
+  color: var(--text-color); /* Updated with CSS variable */
   width: 100%;
   text-align: center;
   opacity: 0;
@@ -158,20 +158,20 @@ h2 {
   display: inline-block;
   margin-right: 0.5vh;
   margin-bottom: 1.3vh;
-  background-color: #3c3f47;
+  background-color: var(--card-bg-color); /* Updated with CSS variable */
   padding: 1.3vh;
   border-radius: 0.5vw;
 }
 
 .menu ul li a {
-  color: white;
+  color: var(--text-color); /* Updated with CSS variable */
   text-decoration: none;
   font-size: 1.8vh;
   transition: color 0.3s;
 }
 
 .menu ul :hover {
-  background-color: #22242b;
+  background-color: var(--card-hover-bg-color); /* Updated with CSS variable */
 }
 
 #particles-js {
@@ -195,7 +195,9 @@ h2 {
 .scroll-indicator a {
   width: 12px;
   height: 12px;
-  background-color: grey;
+  background-color: var(
+    --scroll-indicator-bg-color
+  ); /* Updated with CSS variable */
   border-radius: 50%;
   transition: background-color 0.3s;
   display: block;
@@ -271,13 +273,13 @@ h2 {
 
 .scroll-down i {
   font-size: 3vw; /* Adjust size as needed */
-  color: #fff; /* Adjust color as needed */
+  color: var(--text-color); /* Updated with CSS variable */
   animation: bounce 2s infinite;
   transition: color 0.3s;
 }
 
 .scroll-down i:hover {
-  color: #61dafb;
+  color: var(--link-color); /* Updated with CSS variable */
 }
 
 section {
@@ -299,4 +301,86 @@ section {
   60% {
     transform: translateY(-5px);
   }
+}
+
+/* Toggle Switch Styles */
+.toggle-switch {
+  display: none;
+}
+
+.toggle-label {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc; /* Updated with CSS variable */
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-label:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: 2px;
+  bottom: 2px;
+  background-color: #fff; /* Updated with CSS variable */
+  transition: transform 0.3s;
+}
+
+/* Dark Mode */
+.dark {
+  --bg-color: #282c34;
+  --text-color: #fff;
+  --link-color: #61dafb;
+  --card-bg-color: #3c3f47;
+  --card-hover-bg-color: #22242b;
+  --overlay-bg-color: rgba(0, 0, 0, 0.7);
+  --scroll-indicator-bg-color: grey;
+}
+
+/* Light Mode  */
+.light {
+  --bg-color: #b0f7d9;
+  --text-color: #282c34;
+  --link-color: #ffabab;
+  --card-bg-color: #86f9c9;
+  --card-hover-bg-color: #c5ffba;
+  --overlay-bg-color: rgba(255, 171, 171, 0.5);
+  --scroll-indicator-bg-color: #ffabab;
+}
+
+/* Apply styles based on toggle state */
+.toggle-switch:checked + .toggle-label {
+  background-color: var(--link-color); /* Updated with CSS variable */
+}
+
+.toggle-switch:checked + .toggle-label:before {
+  transform: translateX(20px); /* Position of toggle switch in dark mode */
+}
+
+/* Apply color theme based on toggle state */
+.toggle-switch:checked ~ body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.toggle-switch:checked ~ .menu ul li,
+.toggle-switch:checked ~ .scroll-indicator a {
+  background-color: var(--card-bg-color);
+}
+
+.toggle-switch:checked ~ .menu ul :hover {
+  background-color: var(--card-hover-bg-color);
+}
+
+.toggle-switch:checked ~ .overlay {
+  background: var(--overlay-bg-color);
+}
+
+.toggle-switch:checked ~ .scroll-indicator a {
+  background-color: var(--scroll-indicator-bg-color);
 }

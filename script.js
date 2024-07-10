@@ -121,6 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 1500, // Animation duration in milliseconds
     mirror: true, // whether elements should animate out while scrolling past them
   });
+  document.body.classList.add("light");
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".scroll-indicator a");
 
@@ -185,5 +186,17 @@ document.addEventListener("keydown", function (event) {
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: "smooth" });
     }
+  }
+});
+
+const toggleSwitch = document.querySelector(".toggle-switch");
+
+toggleSwitch.addEventListener("change", () => {
+  if (toggleSwitch.checked) {
+    document.body.classList.remove("light");
+    document.body.classList.add("dark");
+  } else {
+    document.body.classList.remove("dark");
+    document.body.classList.add("light");
   }
 });

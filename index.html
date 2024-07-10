@@ -23,7 +23,7 @@
     <script>
       particlesJS("particles-js", {
         particles: {
-          color: { value: "#ffffff" },
+          color: { value: "#6db5ff" },
           number: { value: 100 },
           size: { value: 3 },
           move: { speed: 1 },
@@ -43,8 +43,11 @@
       <header>
         <nav class="menu">
           <ul>
+            <input type="checkbox" id="toggle" class="toggle-switch" />
+            <label for="toggle" class="toggle-label"></label>
             <li><a href="#about-me">About</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#my-games">My Games</a></li>
             <li><a href="#articles">Published Articles</a></li>
           </ul>
         </nav>
@@ -73,6 +76,7 @@
             ><i class="far fa-envelope"></i
           ></a>
         </div>
+
         <div class="scroll-down">
           <a href="#about-me" target="_blank"
             ><i class="fas fa-chevron-down"></i
@@ -85,6 +89,7 @@
       <a href="#header-wrapper"></a>
       <a href="#about-me"></a>
       <a href="#portfolio"></a>
+      <a href="#my-games"></a>
       <a href="#articles"></a>
     </div>
 
@@ -211,7 +216,7 @@
       <div class="cards">
         <div class="card" data-card data-aos="fade-right">
           <a
-            href="https://testerwork.com/reproducibility-testing/"
+            href="https://testerwork.com/the-importance-of-reproducibility-in-testing/"
             target="_blank"
             class="article-container"
           >
@@ -283,7 +288,6 @@
     <div class="cursor2"></div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
     <script src="script.js"></script>
   </body>
 </html>
