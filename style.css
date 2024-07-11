@@ -101,6 +101,8 @@ h2 {
   max-width: 15vw;
   margin-bottom: 2vh;
   transition: transform 0.3s;
+  position: relative;
+  flex: 1 1 calc(33.333% - 20px);
 }
 
 .card:hover {
@@ -160,7 +162,9 @@ h2 {
   margin-bottom: 1.3vh;
   background-color: var(--card-bg-color); /* Updated with CSS variable */
   padding: 1.3vh;
-  border-radius: 0.5vw;
+  border-radius: 1vw;
+  border-style: dashed;
+  border-width: 0.2vw;
 }
 
 .menu ul li a {
@@ -272,7 +276,7 @@ h2 {
 }
 
 .scroll-down i {
-  font-size: 3vw; /* Adjust size as needed */
+  font-size: 6vw; /* Adjust size as needed */
   color: var(--text-color); /* Updated with CSS variable */
   animation: bounce 2s infinite;
   transition: color 0.3s;
@@ -296,10 +300,10 @@ section {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
   }
   60% {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
 }
 
@@ -410,4 +414,14 @@ section {
 
 .toggle-switch:checked ~ .background {
   background: #242424;
+}
+.tag {
+  position: absolute;
+  bottom: 25vh; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 14px;
 }
