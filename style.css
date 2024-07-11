@@ -303,34 +303,6 @@ section {
   }
 }
 
-/* Toggle Switch Styles */
-.toggle-switch {
-  display: none;
-}
-
-.toggle-label {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 20px;
-  background-color: #ccc; /* Updated with CSS variable */
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.toggle-label:before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  left: 2px;
-  bottom: 2px;
-  background-color: #fff; /* Updated with CSS variable */
-  transition: transform 0.3s;
-}
-
 /* Dark Mode */
 .dark {
   --bg-color: #282c34;
@@ -353,34 +325,82 @@ section {
   --scroll-indicator-bg-color: #ffabab;
 }
 
-/* Apply styles based on toggle state */
+.toggle-switch {
+  display: none;
+}
+
+.toggle-label {
+  width: 200px;
+  height: 80px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 80px;
+  box-shadow: inset 0px 3px 8px rgba(0, 0, 0, 0.4),
+    inset 0px -3px 8px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-label:after {
+  content: "";
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+  border-radius: 70px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.toggle-label svg {
+  position: absolute;
+  width: 50px;
+  top: 15px;
+  z-index: 100;
+}
+
+.sun {
+  left: 15px;
+  fill: #fff;
+  transition: 0.3s;
+}
+
+.moon {
+  left: 135px;
+  fill: #7e7e7e;
+  transition: 0.3s;
+}
+
 .toggle-switch:checked + .toggle-label {
-  background-color: var(--link-color); /* Updated with CSS variable */
+  background: #242424;
 }
 
-.toggle-switch:checked + .toggle-label:before {
-  transform: translateX(20px); /* Position of toggle switch in dark mode */
+.toggle-switch:checked + .toggle-label:after {
+  left: 195px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
 }
 
-/* Apply color theme based on toggle state */
-.toggle-switch:checked ~ body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+.toggle-switch:checked + .toggle-label .sun {
+  fill: #7e7e7e;
 }
 
-.toggle-switch:checked ~ .menu ul li,
-.toggle-switch:checked ~ .scroll-indicator a {
-  background-color: var(--card-bg-color);
+.toggle-switch:checked + .toggle-label .moon {
+  fill: #fff;
 }
 
-.toggle-switch:checked ~ .menu ul :hover {
-  background-color: var(--card-hover-bg-color);
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index: -1;
+  position: absolute;
+  transition: 0.3s;
 }
 
-.toggle-switch:checked ~ .overlay {
-  background: var(--overlay-bg-color);
-}
-
-.toggle-switch:checked ~ .scroll-indicator a {
-  background-color: var(--scroll-indicator-bg-color);
+.toggle-switch:checked ~ .background {
+  background: #242424;
 }
