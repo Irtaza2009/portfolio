@@ -343,6 +343,8 @@ section {
   }
 }
 
+/* Original Styles */
+
 .toggle {
   position: absolute;
   top: 3vh;
@@ -361,7 +363,7 @@ section {
   --scroll-indicator-bg-color: grey;
 }
 
-/* Light Mode  */
+/* Light Mode */
 .light {
   --bg-color: linear-gradient(180deg, #b0f7d9, #ffabab);
   --text-color: #282c34;
@@ -450,4 +452,67 @@ section {
 
 .toggle-switch:checked ~ .background {
   background: #242424;
+}
+
+/* Small Size Styles */
+.toggle.small .toggle-label {
+  width: 75px;
+  height: 30px;
+}
+
+.toggle.small .toggle-label:after {
+  width: 25px;
+  height: 25px;
+  top: 2.5px;
+  left: 2.5px;
+}
+
+.toggle.small .sun {
+  width: 20px;
+  top: 5px;
+  left: 5px;
+}
+
+.toggle.small .moon {
+  left: 50px;
+  top: 5px;
+}
+
+.toggle-switch:checked + .toggle-label.small:after {
+  left: 70px;
+}
+
+/* Media Query to Adjust Size on Smaller Screens */
+@media (max-width: 600px) {
+  .toggle {
+    top: 1vh;
+    left: 1vw;
+  }
+
+  .toggle .toggle-label {
+    width: 75px;
+    height: 30px;
+  }
+
+  .toggle .toggle-label:after {
+    width: 25px;
+    height: 25px;
+    top: 2.5px;
+    left: 2.5px;
+  }
+
+  .toggle .sun {
+    width: 20px;
+    top: 5px;
+    left: 5px;
+  }
+
+  .toggle .moon {
+    left: 50px;
+    top: 5px;
+  }
+
+  .toggle-switch:checked + .toggle-label:after {
+    left: 70px;
+  }
 }

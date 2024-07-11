@@ -200,3 +200,28 @@ toggleSwitch.addEventListener("change", () => {
     document.body.classList.add("light");
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.querySelector(".toggle");
+  const toggleLabel = document.querySelector(".toggle-label");
+
+  function checkOverlap() {
+    const menuButtons = document.querySelector(".menu-buttons"); // Adjust selector based on your menu button container
+    const toggleRect = toggleLabel.getBoundingClientRect();
+    const menuRect = menuButtons.getBoundingClientRect();
+
+    if (
+      toggleRect.right > menuRect.left &&
+      toggleRect.left < menuRect.right &&
+      toggleRect.bottom > menuRect.top &&
+      toggleRect.top < menuRect.bottom
+    ) {
+      toggle.classList.add("small");
+    } else {
+      toggle.classList.remove("small");
+    }
+  }
+
+  window.addEventListener("resize", checkOverlap);
+  checkOverlap();
+});
