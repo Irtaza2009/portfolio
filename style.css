@@ -45,7 +45,7 @@ header h1 {
 .description {
   font-size: 1.7vw;
   margin: 1vh 0 2vh 0;
-  color: #aaa; /* Hardcoded color, update if needed */
+  color: #686868; /* Hardcoded color, update if needed */
 }
 
 .social-links {
