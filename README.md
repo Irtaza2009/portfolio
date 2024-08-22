@@ -1,3 +1,13 @@
-**This is a portfolio website that I am creating to replace the one I currently have.**
+# Personal Portfolio
 
-What I want to do in this portfolio is make it more dynamic, like adding animation etc.
+## Dark Theme
+
+![Dark Theme Title](https://www.irtaza.xyz/portfolio/assets/Title.png)
+
+## Light Theme
+
+![Light Theme Title](https://www.irtaza.xyz/portfolio/assets/TitleLight.png)
+
+## About
+
+![Dark Theme About](https://www.irtaza.xyz/portfolio/assets/About.png)

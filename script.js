@@ -121,7 +121,8 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 1500, // Animation duration in milliseconds
     mirror: true, // whether elements should animate out while scrolling past them
   });
-  document.body.classList.add("light");
+  document.body.classList.add("dark");
+  toggleSwitch.checked = true;
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".scroll-indicator a");
 
