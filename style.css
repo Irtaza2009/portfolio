@@ -164,9 +164,21 @@ h2 {
   color: var(--text-color);
   font-size: 1.5vw;
   transition: color 0.3s;
+  text-decoration: none;
 }
 
 .itch-link:hover {
+  color: #6db5ff;
+}
+
+.github-link {
+  color: var(--text-color);
+  font-size: 1.5vw;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.github-link:hover {
   color: #6db5ff;
 }
 
@@ -175,6 +187,7 @@ h2 {
   font-size: 1.5vw;
   transition: color 0.3s;
   margin-right: 0.5vw;
+  text-decoration: none;
 }
 
 .ext-link:hover {

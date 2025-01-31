@@ -1,5 +1,17 @@
 # Personal Portfolio
 
+**_My personal portfolio!_**
+
+Live at: https://www.irtaza.xyz/portfolio/
+
+## Technologies Used
+
+- HTML
+- JS
+- CSS
+- ParticlesJS
+- AOS.JS
+
 ## Dark Theme
 
 ![Dark Theme Title](https://www.irtaza.xyz/portfolio/assets/Title.png)
